@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.useso.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='main.css' rel='stylesheet' type="text/css">
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.12/jquery.knob.min.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="boardLine"></div>
+    <div id="board"></div>
+    <div id="road2">
+      <div id="point" class="point">
+        <div class="tram" id="tram1">
+        </div>
+      </div>
+      <div id="road1">
+        <!--<div class="message" id="infoB"></div>-->
+        <div id="stationAH"></div>
+        <div id="stationA"><br>Transition Center</div>
+        <div id="stationBH"></div>
+        <div id="stationB"><br>Shelby Mall</div>
+        <div id="stationCH"></div>
+        <div id="stationC"><br>George<br>St</div>
+        <div id="stationDH"></div>
+        <div id="stationD"><br>Valley View<br>Mall</div>
+        <div id="stationEH"></div>
+        <div id="stationE"><br>Target<br></div>
+        <div class="clock">
+          <div class="h shake shake-slow"></div>
+          <div class="m shake shake-slow"></div>
+          <div class="s shake shake-slow"></div>
+        </div>
+        <div class="switchDiv">
+          <div id="switch" class="stopped" onclick="switch1()">Start</div>
+        </div>
+        <div id="k1">
+          <input id="speed" class="knob1" value="" style="z-index:9999"/>
+          <div id="mph">mph</div>
+        </div>
+        <div id="k2">
+          <input id="stopDuration" class="knob2" value=""/>
+          <div id="s">s</div>
+        </div>
+        <div id="door">
+          <div id="doorL2" class="doorL2">
+            <div id="doorL2Window"></div>
+          </div>
+          <div id="doorR2" class="doorR2">
+            <div id="doorR2Window"></div>
+          </div>
+    <!--      <div id="doorState">Door is closed</div>-->
+          <div class="message" id="m1">View of door</div>
+          <div class="message" id="m2">Time</div>
+          <div class="message" id="m3">Control speed in mph</div>
+          <div class="message" id="m4">Control stop duration</div>
+          <div class="message" id="m5">Click to start</div>
+          <div class="message" id="m6">You can move mouse here to view the station</div>
+          <div class="message" id="m7">Also like here</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
