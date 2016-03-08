@@ -314,9 +314,9 @@ function shake(t) {
   }, 470)
 }
 
-// $(document).load(function() {
-//   clock();
-// });
+$(document).load(function() {
+  clock();
+});
 
 function shake(t) {
   t.addClass('shake-constant');
@@ -435,3 +435,10 @@ function switch1() {
 }
 
 function a() {}
+
+$(".station").hover(function(){
+  $(this).next().addClass("animated");
+  $(this).next().on("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+    $(this).removeClass("animated")
+  })
+});
